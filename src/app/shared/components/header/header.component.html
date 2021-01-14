@@ -1,0 +1,49 @@
+<!--Normal Website header-->
+<header class="container-outer" fxLayout="row" fxLayoutAlign="space-between center" fxHide.lt-sm fxShow.lt.xl>
+                        <!--fxHide.lt-sm fxShow.lt.xl  = Permet d'afficher le Desktop header ou le cellphone 
+                                                          Suivant la taille de l'écran
+                                                          Small        -> affiche le cellphone header
+                                                          Normal-large -> affiche le Desktop Header    -->
+  <div class="container" fxFlex="20"> <!--Modifie la largeur que prend le container ici 20% 
+                                          la somme de tous les fxFlex doit etre égale à 100%-->
+    <div class="container-inner">
+      <a [routerLink]="['']" routerLinkActive="router-link-active">Home</a>
+    </div>
+  </div>
+  <div class="container" fxFlex="80" >
+    <!--fxFlexOrder.lt-sm="3" Réordonne l'élément à la 3ème position-->
+    <div class="container-inner">
+      Search Field -- DESKTOP HEADER
+    </div>
+  </div>
+  <div class="container" fxFlex="20" >
+    <!--fxFlexOrder.lt-sm="3" Réordonne l'élément à la 2ème position-->
+    <div class="container-inner">
+      <a [routerLink]="['/row-examples']" routerLinkActive="router-link-active">Examples</a>
+    </div>
+  </div>
+</header>
+
+
+
+
+<!--Cell Phone Header Below-->
+<header class="container-outer" fxLayout="column" fxLayoutAlign="center stretch" fxShow.lt-sm fxHide.lt.xl>
+  <div class="container" >
+    <div class="container-inner">
+      <a [routerLink]="['']" routerLinkActive="router-link-active">Home</a>
+    </div>
+  </div>
+
+  <div class="container" >
+    <!--fxFlexOrder.lt-sm="3" Réordonne l'élément à la 2ème position-->
+    <div class="container-inner">
+      <a [routerLink]="['/row-examples']" routerLinkActive="router-link-active">Examples</a>
+    </div>
+  </div>
+  <div class="container" > <!--fxFlexOrder.lt-sm="3" Réordonne l'élément à la 3ème position-->
+    <div class="container-inner">
+    Search Field -- CELL PHONE HEADER
+    </div>
+</div>
+</header>
