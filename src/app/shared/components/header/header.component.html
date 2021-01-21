@@ -1,5 +1,5 @@
 <!--Normal Website header-->
-<header class="container-outer" fxLayout="row" fxLayoutAlign="space-between center" fxHide.lt-sm fxShow.lt.xl>
+<header class="container-outer" fxLayout="row" fxLayoutAlign="space-between center" fxHide.sm fxShow.lt.xl>
                         <!--fxHide.lt-sm fxShow.lt.xl  = Permet d'afficher le Desktop header ou le cellphone 
                                                           Suivant la taille de l'écran
                                                           Small        -> affiche le cellphone header
@@ -28,7 +28,7 @@
 
 
 <!--Cell Phone Header Below-->
-<header class="container-outer" fxLayout="column" fxLayoutAlign="center stretch" fxShow.lt-sm fxHide.lt.xl>
+<header class="container-outer" fxLayout="column" fxLayoutAlign="center stretch" fxShow.lt-sm fxShow.lt-xs fxHide.xl fxHide.md fxHide.lg>
   <div class="container" >
     <div class="container-inner">
       <a [routerLink]="['']" routerLinkActive="router-link-active">Home</a>
